@@ -1,0 +1,14 @@
+body 
+ {
+    background-color: brown;
+   
+ }
+ 
+ .form-container {
+   max-width: 1000px;
+   padding: 10px;
+   height: 500;
+   background-color: blueviolet;
+ }
+ 
+ 

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+   <h1 style="text-align: center; background-color: blue;color: brown; font-size: 1000%;"> Welcome to our website</h1>
+    <marquee style="color:pink; font-size: 1000%; background-color: blue;" direction="left" scrollamount="50" loop="1" hspace="100px" behavior="slide" > ENJOY YOUR JOURNEY IN INDIA</marquee>
+   <h1 style="color: brown; background-color: blue; font-size: 1000%;"> List of 10 Best Places to Visit in India </h1>
+   <ul>
+    <li style=" font-size: 800%; color: pink;"> kashmir </li> <a style="font-size: 600%;color: black;" href="kashmir.html"> click for more information </a>
+   <Li  style=" font-size: 800%; color: pink;">Ladakh </Li>  <a style="font-size: 600%; color: black;" href="ladakh.html"> click for more information </a>
+    <li  style=" font-size: 800%; color: pink;">Andaman </li>  <a style="font-size: 600%; color: black;" href="andaman.html"> click for more information </a>
+    <Li  style=" font-size: 800%; color: pink;"> Goa <li>   <a style="font-size: 600%; color: black;" href="goa.html"> click for more information </a>
+    <li  style=" font-size: 800%; color: pink;">Agra </li> <a style="font-size: 600%; color: black;" href="agra.html"> click for more information </a>
+     <li  style="font-size: 800%; color: pink;">Varanasi  </li>  <a style="font-size: 600%; color: black;" href="varanasi.html"> click for more information </a>
+    <li  style="font-size: 800%;color: pink;"> Jaisalmer </li> <a style="font-size: 600%; color: black;" href="jaisalmer.html"> click for more information </a>
+    <li  style="font-size: 800%;color: pink;"> Hampi </li> <a style="font-size: 600%; color: black;" href="hampi.html"> click for more information </a>
+    <li  style="font-size: 800%;color: pink;">Rishikesh </li> <a style="font-size: 600%; color: black;" href="rishikesh.html"> click for more information </a>
+    <li  style="font-size: 800%;color: pink;"> Jaipur</li><a style="font-size: 600%; color: black;" href="jaipur.html"> click for more information </a>
+   </ul>
+   <button class="open-button" onclick="openForm()" style="height: 100%; font-size: 1500%; color: brown; background-color: blue;"> Plan your trip</button>
+<div class="form-popup" id="myForm">
+    <form action="/action_page.php" class="form-container">
+        <h1 style="font-size: 1000%;"> travelling form </h1>
+        <label for="text" style="font-size: 800%;"><b>full name</b></label>
+       
+        <input type="text" style="font-size: 400%;" > <br> <br>
+        <label for="country" style="font-size: 800%;"><b>country</b></label>
+        <select style="font-size: 400%;">
+            <option> srilanka </option>
+            <option> india </option>
+            <option> pakistan </option>
+            <option> dubai </option>
+            <option> russia </option>
+        </select> <br> <br>
+        <label for="text" style="font-size: 800%;"><b>Email id</b></label>
+        <input type="email" style="font-size: 400%;"> <br> <br>
+        <label for="text" style="font-size: 800%;"><b>Your tour description</b></label>
+        <input type="email" style="font-size: 400%;"> <br> <br>
+        <label for="text" style="font-size: 800%;"><b> travel dates </b></label>
+        <input type="email" style="font-size: 400%;"> <br> <br>
+        <label for="text" style="font-size: 800%;"><b> duration of stay </b></label>
+        <input type="email" style="font-size: 400%;"> <br> <br>
+        <label for="text" style="font-size: 800%;"><b> No of the person </b></label>
+        <input type="email" style="font-size: 400%;"  onclick="showAlert()"> <br> <br>
+        <label for="text" style="font-size: 800%;"><b> contact no. </b></label>
+        <input type="email" style="font-size: 400%;"> <br> <br>
+        <button type="submit" class="btn" style="font-size: 400%;">submit </button>
+        <button type="button" class="btn cancel" onclick="closeForm()" style="font-size: 400%;">Close</button>
+    </form>
+</div>
+    <script>
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
+    function showAlert() {
+  alert("more than 5 people is necessary!");
+}
+    </script>
+</body>
+</html>
